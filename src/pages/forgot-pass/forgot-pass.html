@@ -1,0 +1,19 @@
+
+<ion-header>
+
+  <ion-navbar>    
+    <ion-title>
+      <ion-icon name="arrow-back" (click)="dismiss()" padding-right></ion-icon>
+         {{'forgotPass_title'|translate}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <p padding>{{'forgotPass_content'|translate}}</p>
+  <ion-item no-lines>
+    <ion-input type="email" placeholder="Email" [(ngModel)]="email" required></ion-input>
+  </ion-item>
+  <button ion-button full (click)="sendMail()">{{'forgotPass_button'|translate}}</button>
+</ion-content>

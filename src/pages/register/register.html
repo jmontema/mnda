@@ -1,0 +1,47 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>
+      <ion-icon padding-right name="arrow-back" (click)="dismiss()"></ion-icon>
+      {{'registerPage_registerTitle'|translate}}
+      </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding no-lines>
+
+  <form [formGroup]="registerForm" (ngSubmit)="processRegisterForm()">
+
+    <ion-list no-lines>
+
+      <ion-item>
+        <ion-label item-left>
+            <ion-icon name="person"></ion-icon>
+        </ion-label>
+        <ion-input type="text" formControlName="email" placeholder="{{'registerPage_emailAddress'|translate}}"></ion-input>
+        <button ion-button item-right round (click)="showEmailToast()"> ? </button>        
+      </ion-item>
+
+      <ion-item>
+        <ion-label item-left>
+          <ion-icon name="lock"></ion-icon>
+        </ion-label>
+        <ion-input type="password" formControlName="password" placeholder="{{'registerPage_password'|translate}}"></ion-input>
+        <button ion-button item-right round (click)="showPasswordToast()"> ? </button>
+      </ion-item>
+
+      <ion-item>
+        <ion-label item-left>
+          <ion-icon name="lock"></ion-icon>
+        </ion-label>
+        <ion-input type="password" formControlName="passwordConfirm" placeholder="{{'registerPage_passwordConfirm'|translate}}"></ion-input>
+      </ion-item>
+
+    </ion-list>
+
+    <button ion-button full type="submit" [disabled]="!registerForm.valid">{{'registerPage_registerTitle'|translate}}</button>
+
+  </form>
+
+</ion-content>

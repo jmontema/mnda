@@ -1,0 +1,42 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <form [formGroup]="loginForm" (ngSubmit)="processLoginForm()">
+
+    <ion-item no-lines padding>
+      <ion-label>
+        <ion-icon name="mail"></ion-icon>
+        {{'loginPage_email'|translate}}
+      </ion-label>
+      <ion-input type="email" formControlName="email" required></ion-input>
+    </ion-item>
+
+    <ion-item no-lines padding>
+      <ion-label>
+        <ion-icon name="lock"></ion-icon>
+        {{'loginPage_password'|translate}}
+      </ion-label>
+      <ion-input type="password" formControlName="password" required></ion-input>
+    </ion-item>
+
+    <button ion-button full type="submit" [disabled]="!loginForm.valid">{{'loginPage_doLogin'|translate}}</button>
+
+    <ion-item no-lines text-right padding>
+      <a (click)="showForgotPassModal()" text-right>{{'loginPage_forgotPass'|translate}}</a>
+    </ion-item>
+
+  </form>
+</ion-content>
+
+<ion-footer padding>
+  <ion-title>
+    {{'loginPage_noAccount'|translate}}  <a (click)="openRegisterPage()">{{'loginPage_itsFree'|translate}}</a>
+  </ion-title>
+</ion-footer>

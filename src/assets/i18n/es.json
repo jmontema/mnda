@@ -1,0 +1,28 @@
+{
+    "loginPage_email": "Email",
+    "loginPage_password": "Contraseña",
+    "loginPage_doLogin": "Acceder",
+    "loginPage_invalidCredentials_title": "Oops!",
+    "loginPage_invalidCredentials_content": "Las credenciales no son válidas",
+    "loginPage_forgotPass": "¿Has olvidado la contraseña?",
+    "loginPage_noAccount": "¿No tienes cuenta?",
+    "loginPage_itsFree": "¡Es gratis!",
+
+    "registerPage_registerTitle": "Regístrate!!",
+    "registerPage_emailAddress": "Dirección de correo",
+    "registerPage_password": "Contraseña",
+    "registerPage_passwordConfirm": "Repetir contraseña",
+    "registerPage_displayName": "Nombre para mostrar",
+    "registerPage_passDesc": "Puede contener letras mayúsculas y minúsculas, números y guión bajo '_'",
+    "registerPage_emailDesc": "Te enviaremos un e-mail de confirmación una vez finalizado el registro",
+
+    "forgotPass_title": "Recupera la contraseña",
+    "forgotPass_content": "¿Has olvidado la contraseña? Introduce tu email y te enviaremos un correo para que puedas reestablecerla",
+    "forgotPass_button": "Enviar email",
+    "forgotPass_emailEnviadoTitle": "Email enviado",
+    "forgotPass_emailEnviadoContent": "Te hemos enviado un correo de restablecimiento de contraseña. Por favor, revisa tu bandeja de entrada",
+
+    "error_invalidEmail": "El formato de Email no es correcto",
+    "error_userNotFound": "No hemos encontrado ese usuario :(",
+    "error_generic": "Error genérico"
+}
